@@ -9,12 +9,31 @@
 
 <form action="" method="POST">
     {% csrf_token %}
+    {{ rForm.as_p }}
 
     <input type="submit" name="stones" value="register">
 
-
-
 </form>
+
+{% if submit_button == "register" %}
+
+
+    {{ name }}
+    {{ email }}
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
